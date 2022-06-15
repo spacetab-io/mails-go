@@ -1,0 +1,8 @@
+.DS_Store
+.idea
+vendor
+.golangci*.yml
+linter.mk
+bin
+c.out
+tests.mk
