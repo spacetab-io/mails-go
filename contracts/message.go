@@ -101,6 +101,10 @@ func (mm *Message) SetSubject(sbj string) error {
 	return nil
 }
 
+func (mm *Message) SetMimeType(typ mime.Type) {
+	mm.MimeType = typ
+}
+
 func (mm *Message) SetHTML(msg []byte) error {
 	if msg == nil {
 		mm.emptyContent()

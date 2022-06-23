@@ -34,8 +34,8 @@ github.com/sendgrid/rest v2.6.9+incompatible h1:1EyIcsNdn9KIisLW50MKwmSRSK+ekuei
 github.com/sendgrid/rest v2.6.9+incompatible/go.mod h1:kXX7q3jZtJXK5c5qK83bSGMdV6tsOE70KbHoqJls4lE=
 github.com/sendgrid/sendgrid-go v3.11.1+incompatible h1:ai0+woZ3r/+tKLQExznak5XerOFoD6S7ePO0lMV8WXo=
 github.com/sendgrid/sendgrid-go v3.11.1+incompatible/go.mod h1:QRQt+LX/NmgVEvmdRw0VT/QgUn499+iza2FnDca9fg8=
-github.com/spacetab-io/configuration-structs-go/v2 v2.0.0-alpha2 h1:WT5CvXlGEJ69lIPsBm/anuwoCnEajRwL0ha2aoLCaQM=
-github.com/spacetab-io/configuration-structs-go/v2 v2.0.0-alpha2/go.mod h1:/qyni0G7nIAu2Hdp7VW3p+RwjhwvIKJtKdbbN2osywE=
+github.com/spacetab-io/configuration-structs-go/v2 v2.0.0-alpha3 h1:KS2lDwGko4ATBvRCq0PSnLcxZvbottU3huqg+hRKm7A=
+github.com/spacetab-io/configuration-structs-go/v2 v2.0.0-alpha3/go.mod h1:/qyni0G7nIAu2Hdp7VW3p+RwjhwvIKJtKdbbN2osywE=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/stretchr/testify v1.7.1 h1:5TQK59W5E3v0r2duFAb7P95B6hEeOyEnHRa8MjYSMTY=

@@ -7,6 +7,7 @@ import (
 	"os"
 	"strings"
 
+	"github.com/spacetab-io/configuration-structs-go/v2/errors"
 	"github.com/spacetab-io/configuration-structs-go/v2/mailing"
 	"github.com/spacetab-io/mails-go/contracts"
 	"github.com/spacetab-io/mails-go/providers"
@@ -49,7 +50,7 @@ func NewMailing(providerCfg mailing.MailProviderConfigInterface, msgCfg mailing.
 	case mailing.MailProviderSMTP:
 		provider, err = providers.NewSMTP(providerCfg)
 	default:
-		return Mailing{}, mailing.ErrUnknownProvider
+		return Mailing{}, errors.ErrUnknownProvider
 	}
 
 	if err != nil {
@@ -64,6 +65,10 @@ func NewMailingForProvider(provider contracts.ProviderInterface, msgCfg mailing.
 }
 
 func (m Mailing) Send(ctx context.Context, msg contracts.MessageInterface) error {
+	if msg.GetMimeType().IsEmpty() && !m.msgCfg.GetMimeType().IsEmpty() {
+		msg.SetMimeType(m.msgCfg.GetMimeType())
+	}
+
 	if msg.GetFrom().IsEmpty() && !m.msgCfg.GetFrom().IsEmpty() {
 		_ = msg.SetFrom(m.msgCfg.GetFrom())
 	}

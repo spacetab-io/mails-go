@@ -7,7 +7,7 @@ require (
 	github.com/mailgun/mailgun-go/v4 v4.6.2
 	github.com/mattbaird/gochimp v0.0.0-20200820164431-f1082bcdf63f
 	github.com/sendgrid/sendgrid-go v3.11.1+incompatible
-	github.com/spacetab-io/configuration-structs-go/v2 v2.0.0-alpha2
+	github.com/spacetab-io/configuration-structs-go/v2 v2.0.0-alpha3
 	github.com/stretchr/testify v1.7.1
 	github.com/toorop/go-dkim v0.0.0-20201103131630-e1cd1a0a5208
 	github.com/xhit/go-simple-mail/v2 v2.11.0

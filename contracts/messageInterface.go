@@ -15,6 +15,7 @@ type MessageInterface interface {
 	SetBccs(addrs mailing.MailAddressListInterface)
 	SetReplyTo(addr mailing.MailAddressInterface) error
 	SetSubject(sbj string) error
+	SetMimeType(typ mime.Type)
 	SetHTML(msg []byte) error
 	SetPlainText(msg []byte) error
 	AddAttachment(file MessageAttachmentInterface) error
